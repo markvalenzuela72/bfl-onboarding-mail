@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=nomaximum-scale=1,user-scalable=0" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.brandsforless.ae/static/css/main.ac408a22.chunk.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_inner">
+            <section class="size-sec">
+                <div class="progress-section">
+                    <progress class="progress" max="100" value="35"></progress>
+                    <span>1/2</span>
+                </div>
+                <div class="section-title">
+                    <h1>What size do you typically wear?</h1>
+                    <p>Explore hundreds of outfit ideas and create your individual and unique style</p>
+                </div>
+                <button class="back_btn"></button>
+                <button class="cross_btn">×</button>
+                <div class="size-caption">
+                    <strong>General Size</strong>
+                    <hr />
+                </div>
+                <div class="row gen-size">
+                    <div class="size-list">
+                        <div class="size-item">
+                            <a href="#">
+                                XS
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                S
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                M
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                L
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                XL
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                XXL
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                Tall
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                Big
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="size-caption">
+                    <strong>Waist Size</strong>
+                    <hr />
+                </div>
+                <div class="row">
+                    <div class="size-list">
+                        <div class="size-item">
+                            <a href="#">
+                                25
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                26
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                31
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                35
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                38
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                40
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                41
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                42
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                44
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                46
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                48
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                51
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                53
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                55
+                            </a>
+                        </div>
+                        <div class="size-item">
+                            <a href="#">
+                                57
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="next-button-yellow">
+                        <a href="#" class="button">NEXT <i class="order_icon_arrowRight"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var sizeItems = document.querySelectorAll('.size-item');
+    for (var i = 0; i < sizeItems.length; i++) {
+        sizeItems[i].addEventListener("click", function(e) {
+            var selected = this;
+            if(selected.classList.contains('selected') === true) {
+                selected.classList.remove('selected');
+            }else{
+            selected.classList.add('selected');
+            }
+            e.preventDefault();
+        })
+    };
+    </script>
+</body>
+
+</html>

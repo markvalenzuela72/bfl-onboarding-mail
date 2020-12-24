@@ -1,0 +1,305 @@
+a:hover {
+  text-decoration: none; }
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .popup .cross_btn {
+    border: 0;
+    background: 0;
+    font-size: 36px;
+    line-height: 21px;
+    font-family: FuturaPT-Medium, Helvetica, Arial, sans-serif !important;
+    vertical-align: middle;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all .4s;
+    width: auto;
+    height: auto;
+    padding: 10px; }
+    .popup .cross_btn:hover {
+      color: #f8d000; }
+    .popup .cross_btn:focus {
+      outline: 0; }
+  .popup .back_btn {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: url(https://www.brandsforless.ae/static/media/m-sprite.6db1c710.png) no-repeat;
+    background-size: 300px;
+    display: inline-block;
+    background-position: -76.5px -7px;
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+  .popup .popup_inner {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background: #fff;
+    width: 100%;
+    max-width: 1140px; }
+    .popup .popup_inner.flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .popup .popup_inner.flex-center .section-title {
+        margin: 3em 0; }
+    .popup .popup_inner .progress-section {
+      margin: 60px auto 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 560px; }
+      .popup .popup_inner .progress-section .progress {
+        height: 10px;
+        border-radius: 30px;
+        width: 100%;
+        margin: 0 5px; }
+      .popup .popup_inner .progress-section span {
+        margin: 0 5px;
+        color: #ccc; }
+      .popup .popup_inner .progress-section progress[value]::-webkit-progress-bar {
+        background-color: #F4F4F4;
+        border-radius: 40px; }
+      .popup .popup_inner .progress-section progress[value]::-webkit-progress-value {
+        border-radius: 40px;
+        background-color: #fed100; }
+    .popup .popup_inner .section-title {
+      margin-top: 2em;
+      margin-bottom: 2.5rem;
+      text-align: center; }
+      .popup .popup_inner .section-title h1 {
+        text-align: center; }
+      .popup .popup_inner .section-title p {
+        font-size: 18px; }
+    .popup .popup_inner .row {
+      margin: 2em auto 4em;
+      flex-basis: 300px;
+      flex-grow: 1;
+      justify-content: center; }
+    .popup .popup_inner .web.row .card {
+      width: 300px; }
+    .popup .popup_inner .mob.row {
+      display: none; }
+    .popup .popup_inner .card {
+      float: left;
+      padding: 0 10px;
+      width: 280px;
+      border: 0; }
+      .popup .popup_inner .card .checkbox input[type="checkbox"] {
+        display: none; }
+      .popup .popup_inner .card .checkbox label {
+        border: 1px solid #fff;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .popup .popup_inner .card .checkbox label::before {
+          background-color: transparent;
+          color: #ffffff;
+          content: " ";
+          display: block;
+          border-radius: 50%;
+          border: 1px solid #fed100;
+          position: absolute;
+          top: 25px;
+          right: 25px;
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          line-height: 28px;
+          transition-duration: 0.4s;
+          border: 2px solid #F2F2F2;
+          z-index: 1; }
+        .popup .popup_inner .card .checkbox label::after {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          top: 33px;
+          right: 31px;
+          z-index: 2; }
+        .popup .popup_inner .card .checkbox label img {
+          transition-duration: 0.2s;
+          transform-origin: 50% 50%; }
+      .popup .popup_inner .card .checkbox :checked + label::before {
+        background-color: #fed100;
+        border: 2px solid #fed100; }
+      .popup .popup_inner .card .checkbox :checked + label::after {
+        background: url(https://www.brandsforless.ae/static/media/m-sprite.6db1c710.png) no-repeat;
+        background-size: 300px;
+        display: inline-block;
+        background-position: -208.5px -51.5px; }
+      .popup .popup_inner .card .wrapper {
+        border-radius: 20px;
+        background-color: #fff;
+        max-width: 300px;
+        width: 100%;
+        height: 440px;
+        position: relative;
+        overflow: hidden; }
+        .popup .popup_inner .card .wrapper:hover .data {
+          transform: translateY(0);
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.62%, rgba(0, 0, 0, 0.8) 73%); }
+      .popup .popup_inner .card .data {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transition: transform 0.3s; }
+        .popup .popup_inner .card .data .content {
+          padding: 1em;
+          position: relative;
+          z-index: 1; }
+      .popup .popup_inner .card .text {
+        height: 70px;
+        margin: 0; }
+    .popup .popup_inner .men.wrapper {
+      background: url(images/men.png) center/cover no-repeat; }
+    .popup .popup_inner .women.wrapper {
+      background: url(images/women.png) center/cover no-repeat; }
+    .popup .popup_inner .kids.wrapper {
+      background: url(images/kids.png) center/cover no-repeat; }
+    .popup .popup_inner .data {
+      color: #fff;
+      transform: translateY(70px); }
+    .popup .popup_inner .title {
+      margin-top: 10px; }
+      .popup .popup_inner .title a {
+        color: #fff;
+        font-size: 26px; }
+    .popup .popup_inner .next-button-yellow .button {
+      width: 200px;
+      background: #fed100; }
+      .popup .popup_inner .next-button-yellow .button:hover {
+        background: #FEDF4D; }
+    .popup .popup_inner .button {
+      display: block;
+      width: 100px;
+      padding: 1em;
+      text-align: center;
+      font-size: 14px;
+      color: #000;
+      line-height: 1;
+      position: relative;
+      font-weight: 700;
+      background: #fff;
+      border-radius: 2em; }
+      .popup .popup_inner .button .order_icon_arrowRight {
+        width: 14px;
+        height: 14px;
+        background: url(https://www.brandsforless.ae/static/media/m-sprite.6db1c710.png) no-repeat;
+        background-size: 170px;
+        display: inline-block;
+        background-position: -27px -1.5px; }
+    .popup .popup_inner .size-sec .row {
+      margin: 0.5em auto 4em; }
+      .popup .popup_inner .size-sec .row.gen-size {
+        margin-bottom: 2em; }
+    .popup .popup_inner .size-sec .size-caption {
+      text-align: center; }
+      .popup .popup_inner .size-sec .size-caption strong {
+        font-size: 18px; }
+      .popup .popup_inner .size-sec .size-caption hr {
+        border-color: #F4F4F4;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        max-width: 750px; }
+    .popup .popup_inner .size-sec .size-list {
+      width: 100%;
+      max-width: 750px;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .popup .popup_inner .size-sec .size-list .size-item {
+        width: 60px;
+        height: 60px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        font-size: 18px;
+        text-align: center;
+        line-height: 60px;
+        font-family: 'FuturaPT-medium';
+        margin: 10px; }
+        .popup .popup_inner .size-sec .size-list .size-item:hover {
+          transform: scale(1.1); }
+        .popup .popup_inner .size-sec .size-list .size-item.selected {
+          background: #000;
+          color: #fff; }
+      .popup .popup_inner .size-sec .size-list a {
+        display: block; }
+    .popup .popup_inner .size-categ-sec .size-categ-list {
+      width: 100%;
+      max-width: 750px;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .popup .popup_inner .size-categ-sec .size-categ-list .categ-item {
+        width: 100px;
+        margin: 10px; }
+        .popup .popup_inner .size-categ-sec .size-categ-list .categ-item:hover {
+          opacity: 0.8;
+          transform: scale(1.1); }
+    @media (max-width: 1299px) {
+      .popup .popup_inner {
+        overflow: scroll;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100vh;
+        top: 0;
+        border-radius: 0; }
+        .popup .popup_inner .card {
+          margin-bottom: 20px; } }
+    @media (max-width: 600px) {
+      .popup .popup_inner .section-title {
+        width: 80%;
+        /* margin: auto; */
+        margin-left: auto;
+        margin-right: auto; }
+        .popup .popup_inner .section-title h1 {
+          font-size: 30px;
+          margin-bottom: 1rem; }
+      .popup .popup_inner .web.row {
+        display: none; }
+      .popup .popup_inner .mob.row {
+        display: flex; }
+      .popup .popup_inner .card {
+        width: 45%;
+        padding: 0;
+        margin-bottom: 10px; }
+        .popup .popup_inner .card .checkbox label::before {
+          top: 15px;
+          right: 15px; }
+        .popup .popup_inner .card .checkbox label::after {
+          top: 23px;
+          right: 21px; }
+      .popup .popup_inner .progress-section {
+        display: none; }
+      .popup .popup_inner .size-item {
+        margin: 8px !important; } }
+
+/*# sourceMappingURL=style.css.map */
