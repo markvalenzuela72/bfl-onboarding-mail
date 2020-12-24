@@ -1,1 +1,1 @@
-# bfl-onboarding-mail
+# bfl-onboarding
